@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Demo" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/Demo" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">India</Field>
+          <Field Name="index">1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">China</Field>
+          <Field Name="index">2</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">UK</Field>
+          <Field Name="index">3</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">USA</Field>
+          <Field Name="index">4</Field>
+        </Row>
+
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

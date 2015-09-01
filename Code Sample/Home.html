@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" src="../Scripts/jquery-1.7.1.min.js"></script>
+    <script src="/_layouts/15/MicrosoftAjax.js"></script>
+    <script src="/_layouts/15/sp.runtime.js"></script>
+    <script src="/_layouts/15/sp.js"></script>
+
+    <script type="text/javascript" src="../Scripts/angular.min.js"></script>
+    <script type="text/javascript" src="../Scripts/angular-drag-and-drop-lists.min.js"></script>
+    <script type="text/javascript" src="../Scripts/App.js"></script>
+
+
+    <link rel="Stylesheet" type="text/css" href="../Content/App.css" />
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div ng-app="demo" ng-controller="demoController">
+        
+        <div class="listItemReorder">
+            <ul dnd-list="items">
+                <li ng-repeat="item in items" dnd-draggable="item" dnd-moved="items.splice($index, 1)" dnd-effect-allowed="move">
+                    {{::item.Title}}
+            </ul>
+        </div>
+        <button ng-click="applyReordering()">Apply</button>
+        <button ng-click="cancelReordering()">Cancel</button>
+    </div>
+</body>
+</html>
